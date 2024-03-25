@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+}
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.walk1{
+    width: 150px;
+    height: 300px;
+    background-image: url(https://lenguajecss.com/css/animaciones/timing-function/monkey-guybrush.png);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    animation: w1Effect 1s steps(6) infinite;
+}
+@keyframes w1Effect {
+    from{
+        background-position: 0px;
+    }to{
+        background-position: -900px;
+    }
+}
+.walk2{
+    width: 150px;
+    height: 300px;
+    background-image: url(https://a0.anyrgb.com/pngimg/1002/1848/art-walk-walk-animation-texture-atlas-walk-cycle-css-adobe-flash-walk-texture-mapping-animated-sprite.png);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    animation: w2Effect 1s steps(8) infinite;
+}
+@keyframes w2Effect {
+    from{
+        background-position: 0px;
+    }to{
+        background-position: -1200px;
+    }
+}
